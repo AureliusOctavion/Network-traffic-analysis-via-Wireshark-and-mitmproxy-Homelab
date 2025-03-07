@@ -3,22 +3,22 @@
 ## Overview
 Through this project I processed the capturing of encrypted HTTPS traffic using Wireshark, installing and configuring `mitmproxy` to intercept and analyze encrypted data, and modifying intercepted requests for educational purposes.
 
-## Objectives
+## Goals
 By the end of this project, you will be able to:
 - Analyze network traffic using Wireshark.
 - Install and configure `mitmproxy` on your virtual machine.
 - Analyze network traffic using `mitmproxy`.
 - Modify intercepted network requests to observe dynamic changes.
 
-## Resources
+## Tools & Resources
 - [HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 - [mitmproxy Tutorial](https://docs.mitmproxy.org/stable/)
 - [Docker Install Guide](https://hub.docker.com/r/mitmproxy/mitmproxy)
 
-## Lab Instructions
+## Project Breakdown
 
-### Exercise 0: Analyze Network Traffic with Wireshark
-1. Start Wireshark and visit any encrypted website (e.g., `https://www.codepath.org/`).
+### 1. Analyze Network Traffic with Wireshark
+1. Start Wireshark and visit any encrypted website.
 2. If using an Azure VM, run the following command in your terminal:
 
 ```bash
@@ -28,9 +28,9 @@ sudo wireshark
 3. Select the network interface `eth0`.
 4. Observe the captured packets and analyze the available information.
 
-### Exercise 1: Analyze Network Traffic with `mitmproxy`
+### 2. Analyze Network Traffic with `mitmproxy`
 
-#### Step 0: Install `mitmproxy`
+#### Step 1: Install `mitmproxy`
 1. Ensure Docker is installed. If not, run:
 
 ```bash
@@ -45,7 +45,7 @@ sudo docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080
 
 3. `mitmproxy` should now be running.
 
-#### Step 1: Configure Network Settings
+#### Step 2: Configure Network Settings
 1. Open Firefox by running:
 
 ```bash
@@ -62,7 +62,7 @@ firefox
 2. Observe the logged requests in `mitmproxy`, similar to the captured packets in Wireshark.
 3. Select a request to view detailed data. Compare the level of detail offered by `mitmproxy` versus Wireshark.
 
-### Exercise 2: Modify Requests with `mitmproxy`
+### Exercise 3: Modify Requests with `mitmproxy`
 1. Start `mitmproxy` by running:
 
 ```bash
