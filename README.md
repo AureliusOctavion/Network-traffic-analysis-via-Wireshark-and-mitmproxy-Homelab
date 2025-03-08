@@ -58,7 +58,7 @@ firefox
 5. Follow the instructions on the page to complete installation, ensuring you convert the `.pem` file to a `.crt` file for proper certificate installation.
 
 #### Step 2: Start Analyzing with `mitmproxy`
-1. With `mitmproxy` running, revisit the encrypted website you tested earlier (e.g., `https://www.codepath.org/`).
+1. With `mitmproxy` running, revisit the encrypted website you tested earlier.
 2. Observe the logged requests in `mitmproxy`, similar to the captured packets in Wireshark.
 3. Select a request to view detailed data. Compare the level of detail offered by `mitmproxy` versus Wireshark.
 
