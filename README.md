@@ -4,7 +4,7 @@
 Through this project I processed the capturing of encrypted HTTPS traffic using Wireshark, installing and configuring `mitmproxy` to intercept and analyze encrypted data, and modifying intercepted requests for educational purposes.
 
 ## Goals
-By the end of this project, you will be able to:
+By the end of this project, I will be able to:
 - Analyze network traffic using Wireshark.
 - Install and configure `mitmproxy` on your virtual machine.
 - Analyze network traffic using `mitmproxy`.
